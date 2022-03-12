@@ -11,7 +11,7 @@ export default function Navbar(){
     return(
         <nav className="Navbar">
             <Link to="/">
-                <img className="Navbar__image" src="./logo316.png" alt="Logo" />
+                <img className="Navbar__image" src="/logo316.png" alt="Logo" />
             </Link>
             <Link to="/thes">
                 <p className={`Navbar__menu${(addCurrentTag("/thes")) ? " current" : ""}`}>Thés</p>
