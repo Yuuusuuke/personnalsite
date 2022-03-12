@@ -11,6 +11,10 @@
     background: #f8f8f8;
     box-shadow: 0 2px 3px rgba(0, 0, 0, .4);
 
+    & :first-child {
+        margin-right: 10px;
+    }
+
     & a {
         height: 34px;
         display: flex;
@@ -27,7 +31,7 @@
         font-weight: 500;
         font-style: normal;
 
-        margin-left: 10px;
+        margin-left: 15px;
 
         &:hover {
             color: #1a5ca2;
