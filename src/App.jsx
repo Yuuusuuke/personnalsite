@@ -1,7 +1,7 @@
 import './App.scss';
-import {BrowserRoutes as Router, Routes, Route} from "react-router-dom";
-import Index from './pages/index';
+import {BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import Navbar from './components/Navbar/Navbar';
+import Index from './pages/Index/Index';
 import Footer from './components/Footer/Footer';
 
 function App() {
