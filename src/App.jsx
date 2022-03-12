@@ -10,23 +10,26 @@ import Thes from './pages/Thes/Thes';
 import GuildWars from './pages/GuildWars/GuildWars';
 import Projets from './pages/Projets/Projets';
 import Error404 from './pages/Error404/Error404';
+import { DarkModeProvider } from "./context/DarkModeContext";
 
 function App() {
   return (
     <div className="App">
+      <DarkModeProvider>
       <Router>
-        <Navbar />
+          <Navbar />
 
-        <Routes>
-          <Route path="/thes" element={<Thes />} />
-          <Route path="/guildwars" element={<GuildWars />} />
-          <Route path="/projets" element={<Projets />} />
-          <Route path="/" element={<Index />} />
-          <Route path="*" element={<Error404 />} />
-        </Routes>
-      </Router>
+          <Routes>
+            <Route path="/thes" element={<Thes />} />
+            <Route path="/guildwars" element={<GuildWars />} />
+            <Route path="/projets" element={<Projets />} />
+            <Route path="/" element={<Index />} />
+            <Route path="*" element={<Error404 />} />
+          </Routes>
+        </Router>
 
-      <Footer />
+        <Footer />
+      </DarkModeProvider>
     </div>
   );
 }

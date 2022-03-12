@@ -5,43 +5,63 @@
     flex-direction: row;
 
     align-items: center;
+    justify-content: space-between;
     padding: 0 16px;
 
     width: 100%;
     height: 56px;
 
-    background: #f8f8f8;
+
     box-shadow: 0 2px 3px rgba(0, 0, 0, .4);
 
-    & :first-child {
-        margin-right: 10px;
+    &--light {
+        background: map_get($white-mode, colorBackground);
     }
 
-    & a {
-        height: 34px;
+    &--dark {
+        background: rgb(32, 32, 32);
+
+        & .Navbar__links__menu {
+            color: white;
+        }
+    }
+
+    &__links {
         display: flex;
-        align-items: center;
-    }
+        flex-direction: row;
 
-    &__image {
-        height: 100%;
-        object-fit: cover;
-    }
-
-    &__menu {
-        font-size: 1.25rem;
-        font-weight: 500;
-        font-style: normal;
-
-        margin-left: 15px;
-
-        &:hover {
-            color: $colorPrimary;
+        & :first-child {
+            margin-right: 10px;
         }
 
-        &.current {
-            color: $colorPrimary;
-            font-weight: 700;
+        & a {
+            height: 34px;
+            display: flex;
+            align-items: center;
+        }
+
+        &__image {
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+            background-color: white;
+        }
+
+        &__menu {
+            font-size: 1.25rem;
+            font-weight: 500;
+            font-style: normal;
+
+            margin-left: 15px;
+
+            &:hover {
+                color: $colorPrimary;
+            }
+
+            &.current {
+                color: $colorPrimary;
+                font-weight: 700;
+            }
         }
     }
 }

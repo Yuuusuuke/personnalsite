@@ -1,0 +1,32 @@
+.buttonDM {
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .4);
+    border: solid 2px;
+    cursor: pointer;
+
+    position: relative;
+
+    &--sun {
+        border-color: rgb(255, 187, 0);
+        background-color: white;
+    }
+
+    &--moon {
+        border-color: purple;
+        background-color: black;
+    }
+
+    &__icon {
+        width: 75%;
+        height: 75%;
+        position: absolute;
+
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        color: rgb(255, 187, 0);
+    }
+}
