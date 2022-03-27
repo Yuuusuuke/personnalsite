@@ -7,7 +7,6 @@ import { darkModeContext } from "../../context/DarkModeContext";
 
 export default function Navbar(){
     const [darkMode] = useContext(darkModeContext);
-    console.log(darkMode);
     let location = useLocation().pathname;
 
     const addCurrentTag = (page) => {
@@ -27,6 +26,9 @@ export default function Navbar(){
             </Link>
             <Link to="/projets">
                 <p className={`Navbar__links__menu${(addCurrentTag("/projets")) ? " current" : ""}`}>Projets</p>
+            </Link>
+            <Link to="/sort_team">
+                <p className={`Navbar__links__menu${(addCurrentTag("/sort_team")) ? " current" : ""}`}>Group Sorter</p>
             </Link>
             </div>
             <DarkModeSwitch />

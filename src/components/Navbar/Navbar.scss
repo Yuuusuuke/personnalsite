@@ -9,20 +9,21 @@
     padding: 0 16px;
 
     width: 100%;
-    height: 56px;
+    height: $navbarHeight;
 
 
     box-shadow: 0 2px 3px rgba(0, 0, 0, .4);
 
     &--light {
-        background: map_get($white-mode, colorBackground);
+        background: map_get($light-mode, colorNavbar);
     }
 
+    //rgb(32, 32, 32)
     &--dark {
-        background: rgb(32, 32, 32);
+        background: map_get($dark-mode, colorNavbar);
 
         & .Navbar__links__menu {
-            color: white;
+            color: map_get($dark-mode, colorText);
         }
     }
 

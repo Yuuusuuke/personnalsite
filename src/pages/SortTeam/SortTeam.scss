@@ -1,0 +1,172 @@
+@import "../../style/global.scss";
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+
+    &--dark {
+        background: map-get($map: $dark-mode, $key: colorBackground);
+        background-repeat: repeat;
+    }
+
+    min-height: calc(100vh - $navbarHeight);
+}
+
+.sorter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        margin: 0;
+        color: map_get($light-mode, colorText);
+
+        &--dark {
+            color: map_get($dark-mode, colorText);
+        }
+    }
+
+    &__subTitle {
+        color: map_get($light-mode, colorText);
+
+        &--dark {
+            color: map_get($dark-mode, colorText);
+        }
+    }
+
+    &__input {
+        width: 100%;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+
+        margin: 20px 0;
+
+        &__label {
+            align-self: flex-start;
+            margin-left: 5px;
+
+            font-size: 18px;
+            font-weight: 500;
+        }
+
+        & input {
+            outline: 0;
+            border: 0;
+            border: 1px solid black;
+            border-radius: 5px;
+            padding: 3px 5px;
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        &--error input {
+            border: 1px solid red;
+        }
+    }
+
+    &__table {
+        width: 100%;
+        max-width: 400px;
+
+        &> :not(:first-child) {
+            margin-top: 10px;
+        }
+
+        &__row {
+            background-color: rgba($color: #000000, $alpha: .2);
+            padding: 3px 10px;
+            border-radius: 5px;
+            border: 1px solid rgba($color: #000000, $alpha: .2);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+            & p {
+                font-size: 16px;
+                font-weight: 500;
+                color: map_get($light-mode, colorText);
+            }
+
+            & svg {
+                margin: 0;
+                color: red;
+                cursor: pointer;
+            }
+
+            &--dark {
+                background-color: rgba($color: #bdbdbd, $alpha: .2);
+
+                & p {
+                    color: map_get($dark-mode, colorText);
+                }
+            }
+        }
+    }
+
+    &__button {
+        padding: 5px 10px;
+        margin-top: 20px;
+
+        border: 0;
+        border-radius: 5px;
+        background-color: $colorPrimary;
+        color: white;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+        font-size: 18px;
+        font-weight: 500;
+
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px inset;
+        }
+    }
+
+    &__group {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+
+        &>div {
+            padding: 5px 10px;
+            border: 2px solid $colorPrimary;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+            width: 200px;
+        }
+
+        &__title {
+            font-size: 23px;
+            font-weight: 500;
+            text-align: center;
+            color: map_get($light-mode, colorText);
+        }
+
+        &__list__pseudo {
+            font-size: 18px;
+            font-weight: 500;
+            color: map_get($light-mode, colorText);
+        }
+
+        &--dark {
+            &>div {
+                background-color: rgba($color: #bdbdbd, $alpha: .2);
+
+            }
+
+            & .sorter__group__title,
+            & .sorter__group__list__pseudo {
+                color: map_get($dark-mode, colorText);
+            }
+        }
+    }
+
+}
