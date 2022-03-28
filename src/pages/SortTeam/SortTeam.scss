@@ -1,4 +1,5 @@
 @import "../../style/global.scss";
+@import "../../style/keyframes.scss";
 
 .content {
     display: flex;
@@ -62,8 +63,21 @@
             font-weight: 400;
         }
 
-        &--error input {
-            border: 1px solid red;
+        & p {
+            display: none;
+            color: red;
+            font-size: 14px;
+            font-weight: 300;
+        }
+
+        &--error {
+            & input {
+                border: 1px solid red;
+            }
+
+            & p {
+                display: block;
+            }
         }
     }
 
@@ -85,8 +99,9 @@
             justify-content: space-between;
             align-items: center;
             box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            animation: .5s slideup both;
 
-            & p {
+            op & p {
                 font-size: 16px;
                 font-weight: 500;
                 color: map_get($light-mode, colorText);

@@ -70,8 +70,11 @@ export default function SortTeam(){
                 <div className={`sorter__input${inputError}`}>
                     <label className="sorter__input__label" htmlFor="nickname">Pseudo</label>
                     <input type="text" name="nickname" placeholder="Lion" onKeyDown={handleKeyDown} />
+                    <p>Veuillez entrer un pseudo correct (sans commencer par un espace)</p>
                 </div>
-                {(listPseudo !== null ?
+
+                {(listPseudo.length !== 0 ?
+                    <>
                     <div className="sorter__table">{listPseudo.map((pseudo, key) =>
                         <div className={`sorter__table__row sorter__table__row--${(darkMode) ? "dark" : "light"}`} key={key}>
                             <p>{pseudo}</p>
@@ -82,9 +85,11 @@ export default function SortTeam(){
                         </div>
                       )}
                     </div>
+                    <button className="sorter__button" onClick={sortGroup}>Valider</button>
+                    </>
                 :"")}
 
-                <button className="sorter__button" onClick={sortGroup}>Valider</button>
+                
 
                 <div className={`sorter__group sorter__group--${(darkMode) ? "dark" : "light"}`}>
                     {Array(numberGroups).fill(null).map((el,i) => {
