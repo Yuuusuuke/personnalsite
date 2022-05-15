@@ -1,0 +1,83 @@
+{
+    "projects": [
+        {
+            "name": "PoE AiO",
+            "gitlabLink": "https://gitlab.com/msangelox7/path-of-exile-all-in-one",
+            "websiteLink": "https://path-of-exile-all-in-one.vercel.app/",
+            "technologies": [
+                "html",
+                "css",
+                "jquery"
+            ]
+        },
+        {
+            "name": "ESO AiO",
+            "gitlabLink": "https://gitlab.com/msangelox7/elder-scrolls-online-all-in-one",
+            "websiteLink": "https://elder-scrolls-online-all-in-one.vercel.app/",
+            "technologies":[
+                "html",
+                "css",
+                "bootstrap"
+            ]
+        },
+        {
+            "name": "Yuusuke website",
+            "gitlabLink": "https://gitlab.com/msangelox7/siteperso",
+            "websiteLink": "https://siteperso.vercel.app/",
+            "technologies":[
+                "html",
+                "css",
+                "bootstrap",
+                "react"
+            ]
+        },
+        {
+            "name": "Reservia",
+            "gitlabLink": "https://github.com/Yuuusuuke/VincentAllio_2_06082021",
+            "websiteLink": "https://yuuusuuke.github.io/VincentAllio_2_06082021/",
+            "technologies":[
+                "html",
+                "css"
+            ]
+        },
+        {
+            "name": "OhMyFood",
+            "gitlabLink": "https://github.com/Yuuusuuke/VincentAllio_3_25082021",
+            "websiteLink": "https://yuuusuuke.github.io/VincentAllio_3_25082021/",
+            "technologies":[
+                "html",
+                "scss"
+            ]
+        },
+        {
+            "name": "GameOn",
+            "gitlabLink": "https://github.com/Yuuusuuke/VincentAllio_4_22092021",
+            "websiteLink": "https://yuuusuuke.github.io/VincentAllio_4_22092021/",
+            "technologies":[
+                "html",
+                "scss",
+                "javascript"
+            ]
+        },
+        {
+            "name": "Fisheye",
+            "gitlabLink": "https://github.com/Yuuusuuke/VincentAllio_6_06102021",
+            "websiteLink": "https://yuuusuuke.github.io/VincentAllio_6_06102021/",
+            "technologies":[
+                "html",
+                "scss",
+                "javascript"
+            ]
+        },
+        {
+            "name": "Les petits plats",
+            "gitlabLink": "https://github.com/Yuuusuuke/VincentAllio_7_25112021",
+            "websiteLink": "https://yuuusuuke.github.io/VincentAllio_7_25112021/",
+            "technologies":[
+                "html",
+                "scss",
+                "javascript"
+            ]
+        }
+    ]
+}
