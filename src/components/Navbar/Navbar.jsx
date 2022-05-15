@@ -1,17 +1,20 @@
-import React, { useContext } from "react";
+import React from "react";
 import {Link, useLocation} from "react-router-dom";
 import "./Navbar.scss";
 
 import DarkModeSwitch from "../DarkModeSwitch/DarkModeSwitch";
-import { darkModeContext } from "../../context/DarkModeContext";
+
+import { useSelector } from "react-redux";
 
 export default function Navbar(){
-    const [darkMode] = useContext(darkModeContext);
+    const darkMode = useSelector(state => state.darkMode).active;
     let location = useLocation().pathname;
 
     const addCurrentTag = (page) => {
         return location === page;
     }
+
+    
     return(
         <nav className={`Navbar Navbar--${(darkMode) ? "dark" : "ligth"}`}>
             <div className="Navbar__links">

@@ -12,15 +12,12 @@ import GuildWars from './pages/GuildWars/GuildWars';
 import Projets from './pages/Projets/Projets';
 import Error404 from './pages/Error404/Error404';
 import SortTeam from './pages/SortTeam/SortTeam';
-import { DarkModeProvider } from "./context/DarkModeContext";
 
 function App() {
   return (
-    <DarkModeProvider>
       <div className="App">
       <Router>
           <Navbar />
-
           <Routes>
             <Route path="/sort_team" element={<SortTeam />} />
             <Route path="/thes" element={<Thes />} />
@@ -30,10 +27,8 @@ function App() {
             <Route path="*" element={<Error404 />} />
           </Routes>
         </Router>
-
         <Footer />
       </div>
-    </DarkModeProvider>
   );
 }
 

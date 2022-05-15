@@ -1,13 +1,12 @@
-import React, { useState, useContext } from "react";
+import React, { useState} from "react";
 import "./SortTeam.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark } from '@fortawesome/free-regular-svg-icons';
-
-import { darkModeContext } from "../../context/DarkModeContext";
+import { useSelector } from "react-redux";
 
 export default function SortTeam(){
     document.title = "Yuusuke - Group Sorter";
-    const [darkMode] = useContext(darkModeContext);
+    const darkMode = useSelector(state => state.darkMode).active;
 
     const [inputError, setInputError] = useState("");
     const [listPseudo, setListPseudo] = useState([]);
@@ -67,30 +66,6 @@ export default function SortTeam(){
                 <p className={`sorter__subTitle sorter__subTitle--${(darkMode) ? "dark" : "light"}`}>
                     Répartit les joueurs en groupes de maximum 5 personnes
                 </p>
-                <div className={`sorter__input${inputError}`}>
-                    <label className="sorter__input__label" htmlFor="nickname">Pseudo</label>
-                    <input type="text" name="nickname" placeholder="Lion" onKeyDown={handleKeyDown} />
-                    <p>Veuillez entrer un pseudo correct (sans commencer par un espace)</p>
-                </div>
-
-                {(listPseudo.length !== 0 ?
-                    <>
-                    <div className="sorter__table">{listPseudo.map((pseudo, key) =>
-                        <div className={`sorter__table__row sorter__table__row--${(darkMode) ? "dark" : "light"}`} key={key}>
-                            <p>{pseudo}</p>
-                            <span onClick={() => deletePseudo(key)}>
-                                <FontAwesomeIcon icon={faCircleXmark} />
-                            </span>
-                            
-                        </div>
-                      )}
-                    </div>
-                    <button className="sorter__button" onClick={sortGroup}>Valider</button>
-                    </>
-                :"")}
-
-                
-
                 <div className={`sorter__group sorter__group--${(darkMode) ? "dark" : "light"}`}>
                     {Array(numberGroups).fill(null).map((el,i) => {
                         return(
@@ -110,6 +85,32 @@ export default function SortTeam(){
                         )
                     })}
                 </div>
+
+                <div className={`sorter__input${inputError}`}>
+                    <label className={`sorter__input__label sorter__input__label--${(darkMode) ? "dark" : "light"}`} htmlFor="nickname">Pseudo</label>
+                    <input type="text" name="nickname" placeholder="Lion" onKeyDown={handleKeyDown} />
+                    <p>Veuillez entrer un pseudo correct (sans commencer par un espace)</p>
+                </div>
+
+                {(listPseudo.length !== 0 ?
+                    <>
+                    <button className="sorter__button" onClick={sortGroup}>Valider</button>
+                    <div className="sorter__table">{listPseudo.map((pseudo, key) =>
+                        <div className={`sorter__table__row sorter__table__row--${(darkMode) ? "dark" : "light"}`} key={key}>
+                            <p>{pseudo}</p>
+                            <span onClick={() => deletePseudo(key)}>
+                                <FontAwesomeIcon icon={faCircleXmark} />
+                            </span>
+                            
+                        </div>
+                      )}
+                    </div>
+                    </>
+                :"")}
+
+                
+
+                
                 
                 
             </div>
