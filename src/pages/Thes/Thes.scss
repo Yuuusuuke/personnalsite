@@ -2,12 +2,19 @@
 
 .thesBackground {
     width: 100%;
-    height: calc(100vh - $navbarHeight);
+    min-height: calc(100vh - $navbarHeight);
     background-color: map-get($map: $light-mode, $key: colorBackground);
 
+    // For Darkmode
     &--dark {
         background: map-get($map: $dark-mode, $key: colorBackground);
         background-repeat: repeat;
+
+        & .thesContainer{
+            &__header{
+                color: white;
+            }
+        }
     }
 }
 
@@ -15,4 +22,18 @@
     z-index: 1;
     width: 100%;
     height: 100%;
+    padding-top: 1rem;
+
+    &__header{
+    }
+
+    &__table{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
+        margin-top: 20px;
+    }
 }
