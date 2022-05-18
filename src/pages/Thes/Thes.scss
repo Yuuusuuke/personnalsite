@@ -2,8 +2,7 @@
 
 .thesBackground {
     width: 100%;
-    min-height: calc(100vh - $navbarHeight);
-    background-color: map-get($map: $light-mode, $key: colorBackground);
+    min-height: $contentMinHeight;
 
     // For Darkmode
     &--dark {
@@ -23,9 +22,6 @@
     width: 100%;
     height: 100%;
     padding-top: 1rem;
-
-    &__header{
-    }
 
     &__table{
         display: flex;

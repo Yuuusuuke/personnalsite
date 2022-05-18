@@ -8,6 +8,11 @@
     margin-bottom: 20px;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: transform .3s ease-in-out;
+
+    &:hover{
+        transform: scale(110%);
+    }
 
     &__image{
         width: 100%;
@@ -23,7 +28,9 @@
 
         &__title{
             font-size: 18px;
-            word-wrap: break-word;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
             margin: 0;
         }
 
@@ -35,7 +42,7 @@
     }
 
     &__tagTable{
-        padding: 5px;
+        padding: 5px 5px 0 5px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;

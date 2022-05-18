@@ -13,7 +13,7 @@
         background-repeat: repeat;
     }
 
-    min-height: calc(100vh - $navbarHeight);
+    min-height: $contentMinHeight;
 }
 
 .sorter {

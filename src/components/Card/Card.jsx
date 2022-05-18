@@ -12,6 +12,7 @@ import Tag from "../Tag/Tag";
  * @param {string} props.link
  * @param {string} props.title
  * @param {string} props.sideTitle
+ * @param {string} props.sideTitleLink (optionnal)
  * @param {array} props.tags
  * 
  */
@@ -23,7 +24,11 @@ export default function Card(props){
             </a>
             <div className="card__description">
                 <h3 className="card__description__title">{props.title}</h3>
-                <p className="card__description__sidetitle">{props.sideTitle}</p>
+                {props.sideTitleLink !== undefined ?
+                    <a className="card__description__sidetitle" href={props.sideTitleLink} >{props.sideTitle}</a>
+                    :
+                    <p className="card__description__sidetitle">{props.sideTitle}</p>
+                }
             </div>
             <div className="card__tagTable">
                 {props.tags.map((tag, key) => {
@@ -40,4 +45,5 @@ Card.prototype = {
     title: PropTypes.string,
     sideTitle: PropTypes.string,
     tags: PropTypes.array,
+    sideTitleLink: PropTypes.string,
 }

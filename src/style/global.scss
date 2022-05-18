@@ -13,3 +13,5 @@ $dark-mode: (colorBackground: url("../../ressources/backgroundPatternDark.png"),
 
 // Sizes
 $navbarHeight: 56px;
+$footerHeight: 30px;
+$contentMinHeight: calc(100vh - $navbarHeight - $footerHeight);
