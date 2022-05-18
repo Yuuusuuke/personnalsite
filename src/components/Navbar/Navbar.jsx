@@ -25,13 +25,13 @@ export default function Navbar(){
                 <p className={`Navbar__links__menu${(addCurrentTag("/thes")) ? " current" : ""}`}>Thés</p>
             </Link>
             <Link to="/guildwars">
-                <p className={`Navbar__links__menu${(addCurrentTag("/guildwars")) ? " current" : ""}`}>Guild Wars 2</p>
-            </Link>
-            <Link to="/projets">
-                <p className={`Navbar__links__menu${(addCurrentTag("/projets")) ? " current" : ""}`}>Projets</p>
+                <p className={`Navbar__links__menu${(addCurrentTag("/guildwars")) ? " current" : ""}`}>Boss Checker</p>
             </Link>
             <Link to="/sort_team">
-                <p className={`Navbar__links__menu${(addCurrentTag("/sort_team")) ? " current" : ""}`}>Group Sorter</p>
+                <p className={`Navbar__links__menu${(addCurrentTag("/sort_team")) ? " current" : ""}`}>Organisateur de groupes</p>
+            </Link>
+            <Link to="/about">
+                <p className={`Navbar__links__menu${(addCurrentTag("/about")) ? " current" : ""}`}>A propos</p>
             </Link>
             </div>
             <DarkModeSwitch />

@@ -22,7 +22,7 @@ function App() {
             <Route path="/sort_team" element={<SortTeam />} />
             <Route path="/thes" element={<Thes />} />
             <Route path="/guildwars" element={<GuildWars />} />
-            <Route path="/projets" element={<Projets />} />
+            <Route path="/about" element={<Projets />} />
             <Route path="/" element={<Index />} />
             <Route path="*" element={<Error404 />} />
           </Routes>

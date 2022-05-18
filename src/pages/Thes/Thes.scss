@@ -12,7 +12,7 @@
 
         & .thesContainer{
             &__header{
-                color: white;
+                color: map-get($map: $dark-mode, $key: colorText);
             }
         }
     }

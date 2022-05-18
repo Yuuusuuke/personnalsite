@@ -1,6 +1,7 @@
 import React from "react";
 import "./Card.scss"
 import PropTypes from 'prop-types';
+import Tag from "../Tag/Tag";
 
 /**
  * Card component
@@ -23,6 +24,11 @@ export default function Card(props){
             <div className="card__description">
                 <h3 className="card__description__title">{props.title}</h3>
                 <p className="card__description__sidetitle">{props.sideTitle}</p>
+            </div>
+            <div className="card__tagTable">
+                {props.tags.map((tag, key) => {
+                    return <Tag key={key} text={tag} />
+                })}
             </div>
         </article>
     );

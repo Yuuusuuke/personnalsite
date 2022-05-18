@@ -1,0 +1,31 @@
+.tag{
+    padding: 1px 5px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size: 15px;
+    margin-right: 5px;
+
+    &--thénoir{
+        background-color: black;
+        color: white;
+    }
+    &--thévert{
+        background-color: rgb(4, 160, 4);
+        color: white;
+    }
+    &--infusion{
+        background-color: rgb(91, 238, 140);
+    }
+    &--chai{
+        background-color: yellow;
+    }
+    &--earlgrey{
+        background-color: rgb(37, 202, 231);
+    }
+    &--vanille{
+        background-color: rgb(250, 250, 152);
+    }
+    &--oolong{
+        background-color: rgb(243, 101, 207);
+    }
+}
