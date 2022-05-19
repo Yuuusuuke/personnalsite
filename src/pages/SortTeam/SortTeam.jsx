@@ -61,7 +61,7 @@ export default function SortTeam(){
         <div className={`content content--${(darkMode) ? "dark" : "light"}`}>
             <div className="sorter container">
                 <h1 className={`sorter__title sorter__title--${(darkMode) ? "dark" : "light"}`}>
-                    Group Sorter
+                    Organisateur de groupes
                 </h1>
                 <p className={`sorter__subTitle sorter__subTitle--${(darkMode) ? "dark" : "light"}`}>
                     Répartit les joueurs en groupes de maximum 5 personnes

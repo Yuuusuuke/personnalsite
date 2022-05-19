@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import './App.scss';
 // Components
 import Navbar from './components/Navbar/Navbar';
-import Index from './pages/Index/Index';
+import Index from './pages/index/index';
 import Footer from './components/Footer/Footer';
 // Pages
 import Thes from './pages/Thes/Thes';

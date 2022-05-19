@@ -1,5 +1,5 @@
 import React from "react";
-import "./Index.scss";
+import "./index.scss";
 
 export default function Index(){
     document.title = "Yuusuke - Index";

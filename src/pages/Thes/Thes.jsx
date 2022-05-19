@@ -13,15 +13,11 @@ export default function Thes(){
         dispatch(getTeasData());
     }, [dispatch])
 
-    console.log(teasList);
-    console.log(teasList.length);
-
     const addBlank = (number) => {
         let result = [];
         for(let i = 0; i<number; i++){
             result.push(<div key={`blank ${i}`} className='card__blank'></div>);
         }
-        console.log(result);
         return <>{result}</>;
     }
 
@@ -34,14 +30,14 @@ export default function Thes(){
                         Cette liste comprends uniquement les thés qui ont été les plus appréciés et ne comprends pas forcément tous les types de thés
                     </p>
                 </section>
-                <div className="thesContainer__table">
+                <section className="thesContainer__table">
                     {teasList.length !== undefined &&
                         teasList.map((tea, key) => {
                             return <Card key={key} image={tea.image} link={tea.link} title={tea.name} sideTitle={tea.price} tags={tea.tags} />
                         })
                     }
                     {teasList.length !== undefined && addBlank(4-(teasList.length%4))}
-                </div>
+                </section>
             </div>
         </div>
     );
