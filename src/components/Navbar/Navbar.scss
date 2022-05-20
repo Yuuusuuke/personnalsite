@@ -1,4 +1,5 @@
 @import "../../style/global.scss";
+@import "../../style/mixins.scss";
 
 .Navbar {
     display: flex;
@@ -63,6 +64,14 @@
                 color: $colorPrimary;
                 font-weight: 700;
             }
+
+            @include for-size(mobile){
+                display: none !important;
+            }
         }
+    }
+
+    &__buttons{
+        display: flex;
     }
 }

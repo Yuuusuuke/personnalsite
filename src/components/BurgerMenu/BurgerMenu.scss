@@ -1,0 +1,55 @@
+@import "../../style/mixins.scss";
+.burgerMenu{
+    display: none;
+    position: relative;
+    height: 35px;
+    width: 35px;
+    margin-right: 5px;
+    padding: 5px;
+
+    border-radius: 50%;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, .4);
+    border: solid 2px;
+
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    @include for-size(mobile){
+        display: flex !important;
+    }
+
+    &__content{
+        display: none;
+        flex-direction: column;
+        text-align: right;
+        padding: 0 7px;
+
+        position: absolute;
+        top: -2px;
+        right: -2px;
+        z-index: 10;
+        
+        background-color: white;
+        border: 2px solid;
+        border-radius: 10px;
+        color: black;
+
+        &--show{
+            display: flex;
+        }
+
+        &__links{
+            font-size: 16px;
+            font-weight: 500;
+            font-style: normal;
+            white-space: nowrap;
+        }
+
+        &__divider{
+            border-bottom: solid 1px grey;
+            width: 100%;
+        }
+    }
+}

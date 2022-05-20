@@ -1,0 +1,12 @@
+$breakpoints: (
+    mobile: 480px,
+    tablet_portrait: 768px,
+    tablet_landscape: 1171px,
+    desktop: 1577px
+);
+
+@mixin for-size($range){
+    @media screen and (max-width: map-get($map: $breakpoints, $key: $range)){
+        @content;
+    }
+}

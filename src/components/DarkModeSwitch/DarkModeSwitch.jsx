@@ -1,7 +1,7 @@
 import React from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import "./DarkModeSwitch.scss";
-import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons'
+import { faSun, faMoon } from '@fortawesome/free-solid-svg-icons';
 
 import { switchMode } from "../../redux/darkmode";
 import { useDispatch, useSelector } from "react-redux";
