@@ -124,9 +124,11 @@ This project uses :
 ## Roadmap
 
 - [x] Group sorter
-- [ ] List of teas
+- [x] List of teas
+- [x] Twitch embed on Index
 - [ ] Weekly Bosses Checker
 - [ ] List of projects
+- [ ] Add more content for the Index
 
 See the [open issues](https://github.com/Yuuusuuke/personnalsite/issues) for a full list of proposed features (and known issues).
 

@@ -11,6 +11,8 @@
 
     border-radius: 50%;
     box-shadow: 0 2px 3px rgba(0, 0, 0, .4);
+    background-color: map_get($light-mode, colorNavbar);
+    color: map_get($light-mode, colorText);
     border: solid 2px;
 
     align-items: center;

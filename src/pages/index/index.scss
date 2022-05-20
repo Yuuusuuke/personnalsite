@@ -50,5 +50,6 @@
     display: none;
     @include for-size(mobile){
         display: block;
+        height: 100% !important;
     }
 }
