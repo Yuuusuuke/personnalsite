@@ -9,9 +9,15 @@ export default function Index(){
         <div className="content backgroundIndex">
             <img src={background} alt="" />
             <div className="container container--index twitchEmbed">
-                <TwitchEmbed
+                <TwitchEmbed id="twitch-embed--desktop"
                     channel="Yuusuuke"
                     theme="dark"
+                />
+                <TwitchEmbed
+                    id="twitch-embed--mobile"
+                    channel="Yuusuuke"
+                    theme="dark"
+                    withChat= {false}
                 />
             </div>
         </div>

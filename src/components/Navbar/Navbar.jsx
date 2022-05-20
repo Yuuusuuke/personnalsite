@@ -10,11 +10,6 @@ import BurgerMenu from "../BurgerMenu/BurgerMenu";
 export default function Navbar(){
     const darkMode = useSelector(state => state.darkMode).active;
     let location = useLocation().pathname;
-
-    const addCurrentTag = (page) => {
-        return location === page;
-    }
-
     
     return(
         <nav className={`Navbar Navbar--${(darkMode) ? "dark" : "ligth"}`}>
@@ -22,16 +17,16 @@ export default function Navbar(){
             <Link to="/">
                 <img className="Navbar__links__image" src="/logo316.png" alt="Logo" />
             </Link>
-            <Link className={`Navbar__links__menu${(addCurrentTag("/thes")) ? " current" : ""}`} to="/thes">
+            <Link className={`Navbar__links__menu${(location === "/thes") ? " current" : ""}`} to="/thes">
                 <p>Thés</p>
             </Link>
-            <Link className={`Navbar__links__menu${(addCurrentTag("/guildwars")) ? " current" : ""}`} to="/guildwars">
+            <Link className={`Navbar__links__menu${(location === "/guildwars") ? " current" : ""}`} to="/guildwars">
                 <p>Boss Checker</p>
             </Link>
-            <Link className={`Navbar__links__menu${(addCurrentTag("/sort_team")) ? " current" : ""}`} to="/sort_team">
+            <Link className={`Navbar__links__menu${(location === "/sort_team") ? " current" : ""}`} to="/sort_team">
                 <p>Organisateur de groupes</p>
             </Link>
-            <Link className={`Navbar__links__menu${(addCurrentTag("/about")) ? " current" : ""}`} to="/about">
+            <Link className={`Navbar__links__menu${(location === "/about") ? " current" : ""}`} to="/about">
                 <p>A propos</p>
             </Link>
             </div>

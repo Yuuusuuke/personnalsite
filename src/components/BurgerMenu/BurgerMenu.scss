@@ -1,4 +1,6 @@
+@import "../../style/global.scss";
 @import "../../style/mixins.scss";
+
 .burgerMenu{
     display: none;
     position: relative;
@@ -45,6 +47,11 @@
             font-weight: 500;
             font-style: normal;
             white-space: nowrap;
+
+            &.current {
+                color: $colorPrimary;
+                font-weight: 700;
+            }
         }
 
         &__divider{

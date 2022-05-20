@@ -27,7 +27,7 @@ export default function Thes(){
                 <section className="thesContainer__header">
                     <h1 className="thesContainer__header__title">Liste des thés</h1>
                     <p className="thesContainer__header__subTitle">
-                        Cette liste comprends uniquement les thés qui ont été les plus appréciés et ne comprends pas forcément tous les types de thés
+                        Cette liste comprends uniquement les thés qui ont été les plus appréciés et ne comprends pas forcément tous les types de thés.
                     </p>
                 </section>
                 <section className="thesContainer__table">

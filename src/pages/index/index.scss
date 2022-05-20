@@ -1,3 +1,11 @@
+@import "../../style/mixins.scss";
+
+.container--index{
+    @include for-size(mobile){
+        padding: 0;
+    }
+}
+
 .twitchEmbed{
     flex: 1;
     display: flex;
@@ -19,9 +27,28 @@
     }
 }
 
-#twitch-embed{
+#twitch-embed--desktop,
+#twitch-embed--mobile{
     position: absolute;
     height: 600px !important;
     max-height: 100%;
     width: 90% !important;
+
+    @include for-size(mobile){
+        width: 100% !important;
+    }
+}
+
+#twitch-embed--desktop{
+    display: block;
+    @include for-size(mobile){
+        display: none;
+    }
+}
+
+#twitch-embed--mobile{
+    display: none;
+    @include for-size(mobile){
+        display: block;
+    }
 }
