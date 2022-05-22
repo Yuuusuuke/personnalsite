@@ -2,76 +2,75 @@
 @import "../../style/mixins.scss";
 
 .Navbar {
+  display: flex;
+  flex-direction: row;
+
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+
+  width: 100%;
+  height: $navbarHeight;
+
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+
+  &--light {
+    background: map_get($light-mode, colorNavbar);
+  }
+
+  //rgb(32, 32, 32)
+  &--dark {
+    background: map_get($dark-mode, colorNavbar);
+
+    & .Navbar__links__menu {
+      color: map_get($dark-mode, colorText);
+    }
+  }
+
+  &__links {
     display: flex;
     flex-direction: row;
 
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 16px;
-
-    width: 100%;
-    height: $navbarHeight;
-
-
-    box-shadow: 0 2px 3px rgba(0, 0, 0, .4);
-
-    &--light {
-        background: map_get($light-mode, colorNavbar);
+    & :first-child {
+      margin-right: 10px;
     }
 
-    //rgb(32, 32, 32)
-    &--dark {
-        background: map_get($dark-mode, colorNavbar);
-
-        & .Navbar__links__menu {
-            color: map_get($dark-mode, colorText);
-        }
+    & a {
+      height: 34px;
+      display: flex;
+      align-items: center;
     }
 
-    &__links {
-        display: flex;
-        flex-direction: row;
-
-        & :first-child {
-            margin-right: 10px;
-        }
-
-        & a {
-            height: 34px;
-            display: flex;
-            align-items: center;
-        }
-
-        &__image {
-            height: 100%;
-            object-fit: cover;
-            border-radius: 50%;
-            background-color: white;
-        }
-
-        &__menu {
-            font-size: 1.25rem;
-            font-weight: 500;
-            font-style: normal;
-
-            margin-left: 15px;
-
-            &:hover {
-                color: $colorPrimary;
-            }
-
-            &.current {
-                color: $colorPrimary;
-                font-weight: 700;
-            }
-
-            @include for-size(mobile){
-                display: none !important;
-            }
-        }
+    &__image {
+      height: 100%;
+      object-fit: cover;
+      border-radius: 50%;
+      background-color: white;
     }
 
-    &__buttons{
-        display: flex;
+    &__menu {
+      font-size: 1.25rem;
+      font-weight: 500;
+      font-style: normal;
+
+      margin-left: 15px;
+
+      &:hover {
+        color: $colorPrimary;
+      }
+
+      &.current {
+        color: $colorPrimary;
+        font-weight: 700;
+      }
+
+      @include for-size(mobile) {
+        display: none !important;
+      }
     }
+  }
+
+  &__buttons {
+    display: flex;
+  }
 }

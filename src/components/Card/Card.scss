@@ -1,61 +1,61 @@
-.card{
-    max-width: 300px;
+.card {
+  max-width: 300px;
+
+  display: flex;
+  flex-direction: column;
+
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(110%);
+  }
+
+  &__image {
+    width: 100%;
+    object-fit: contain;
+    aspect-ratio: 4/3;
+    border-radius: 10px 10px 0 0;
+  }
+
+  &__description {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px;
+    margin-top: 5px;
+
+    &__title {
+      font-size: 18px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin: 0;
+    }
+
+    &__sidetitle {
+      font-size: 16px;
+      margin-left: 10px;
+      font-weight: 500;
+    }
+  }
+
+  &__tagTable {
+    padding: 5px 5px 0 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  &__blank {
+    width: 300px;
 
     display: flex;
     flex-direction: column;
 
-    padding-bottom: 5px;
+    padding: 10px 0;
     margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    transition: transform .3s ease-in-out;
-
-    &:hover{
-        transform: scale(110%);
-    }
-
-    &__image{
-        width: 100%;
-        object-fit: contain;
-        aspect-ratio: 4/3;
-        border-radius: 10px 10px 0 0;
-    }
-
-    &__description{
-        display: flex;
-        justify-content: space-between;
-        padding: 0 5px;
-        margin-top: 5px;
-
-        &__title{
-            font-size: 18px;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            margin: 0;
-        }
-
-        &__sidetitle{
-            font-size: 16px;
-            margin-left: 10px;
-            font-weight: 500;
-        }
-    }
-
-    &__tagTable{
-        padding: 5px 5px 0 5px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    &__blank{
-        width: 300px;
-
-        display: flex;
-        flex-direction: column;
-
-        padding: 10px 0;
-        margin-bottom: 20px;
-    }
+  }
 }

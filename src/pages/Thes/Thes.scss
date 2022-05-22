@@ -1,35 +1,35 @@
 @import "../../style/global.scss";
 
 .thesBackground {
-    width: 100%;
-    min-height: $contentMinHeight;
+  width: 100%;
+  min-height: $contentMinHeight;
 
-    // For Darkmode
-    &--dark {
-        background: map-get($map: $dark-mode, $key: colorBackground);
-        background-repeat: repeat;
+  // For Darkmode
+  &--dark {
+    background: map-get($map: $dark-mode, $key: colorBackground);
+    background-repeat: repeat;
 
-        & .thesContainer{
-            &__header{
-                color: map-get($map: $dark-mode, $key: colorText);
-            }
-        }
+    & .thesContainer {
+      &__header {
+        color: map-get($map: $dark-mode, $key: colorText);
+      }
     }
+  }
 }
 
 .thesContainer {
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    padding-top: 1rem;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  padding-top: 1rem;
 
-    &__table{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        align-items: flex-start;
-        flex-wrap: wrap;
+  &__table {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
 
-        margin-top: 20px;
-    }
+    margin-top: 20px;
+  }
 }

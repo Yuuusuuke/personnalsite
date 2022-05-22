@@ -1,55 +1,55 @@
 @import "../../style/mixins.scss";
 
-.container--index{
-    @include for-size(mobile){
-        padding: 0;
-    }
+.container--index {
+  @include for-size(mobile) {
+    padding: 0;
+  }
 }
 
-.twitchEmbed{
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 1750px;
+.twitchEmbed {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1750px;
 
-    position: relative;
+  position: relative;
 }
 
-.backgroundIndex{
-    position: relative;
+.backgroundIndex {
+  position: relative;
 
-    & img{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
+  & img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 #twitch-embed--desktop,
-#twitch-embed--mobile{
-    position: absolute;
-    height: 600px !important;
-    max-height: 100%;
-    width: 90% !important;
+#twitch-embed--mobile {
+  position: absolute;
+  height: 600px !important;
+  max-height: 100%;
+  width: 90% !important;
 
-    @include for-size(mobile){
-        width: 100% !important;
-    }
+  @include for-size(mobile) {
+    width: 100% !important;
+  }
 }
 
-#twitch-embed--desktop{
-    display: block;
-    @include for-size(mobile){
-        display: none;
-    }
-}
-
-#twitch-embed--mobile{
+#twitch-embed--desktop {
+  display: block;
+  @include for-size(mobile) {
     display: none;
-    @include for-size(mobile){
-        display: block;
-        height: 100% !important;
-    }
+  }
+}
+
+#twitch-embed--mobile {
+  display: none;
+  @include for-size(mobile) {
+    display: block;
+    height: 100% !important;
+  }
 }

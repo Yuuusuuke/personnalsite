@@ -1,15 +1,19 @@
 // Colors
 $colorPrimary: #1a5ca2;
 
-$light-mode: (colorBackground: #f8f8f8,
-    colorContainer: #f8f8f8,
-    colorText: black,
-    colorNavbar: #f8f8f8);
+$light-mode: (
+  colorBackground: #f8f8f8,
+  colorContainer: #f8f8f8,
+  colorText: black,
+  colorNavbar: #f8f8f8,
+);
 
-$dark-mode: (colorBackground: url("../../ressources/backgroundPatternDark.png"),
-    colorContainer: lighten(#121212, 10%),
-    colorNavbar: lighten(#121212, 5%),
-    colorText: white);
+$dark-mode: (
+  colorBackground: url("../../ressources/backgroundPatternDark.png"),
+  colorContainer: lighten(#121212, 10%),
+  colorNavbar: lighten(#121212, 5%),
+  colorText: white,
+);
 
 // Sizes
 $navbarHeight: 56px;

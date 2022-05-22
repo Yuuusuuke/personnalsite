@@ -1,64 +1,64 @@
 @import "../../style/global.scss";
 @import "../../style/mixins.scss";
 
-.burgerMenu{
+.burgerMenu {
+  display: none;
+  position: relative;
+  height: 35px;
+  width: 35px;
+  margin-right: 5px;
+  padding: 5px;
+
+  border-radius: 50%;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.4);
+  background-color: map_get($light-mode, colorNavbar);
+  color: map_get($light-mode, colorText);
+  border: solid 2px;
+
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+
+  @include for-size(mobile) {
+    display: flex !important;
+  }
+
+  &__content {
     display: none;
-    position: relative;
-    height: 35px;
-    width: 35px;
-    margin-right: 5px;
-    padding: 5px;
+    flex-direction: column;
+    text-align: right;
+    padding: 0 7px;
 
-    border-radius: 50%;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, .4);
-    background-color: map_get($light-mode, colorNavbar);
-    color: map_get($light-mode, colorText);
-    border: solid 2px;
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    z-index: 10;
 
-    align-items: center;
-    justify-content: center;
+    background-color: white;
+    border: 2px solid;
+    border-radius: 10px;
+    color: black;
 
-    cursor: pointer;
-
-    @include for-size(mobile){
-        display: flex !important;
+    &--show {
+      display: flex;
     }
 
-    &__content{
-        display: none;
-        flex-direction: column;
-        text-align: right;
-        padding: 0 7px;
+    &__links {
+      font-size: 16px;
+      font-weight: 500;
+      font-style: normal;
+      white-space: nowrap;
 
-        position: absolute;
-        top: -2px;
-        right: -2px;
-        z-index: 10;
-        
-        background-color: white;
-        border: 2px solid;
-        border-radius: 10px;
-        color: black;
-
-        &--show{
-            display: flex;
-        }
-
-        &__links{
-            font-size: 16px;
-            font-weight: 500;
-            font-style: normal;
-            white-space: nowrap;
-
-            &.current {
-                color: $colorPrimary;
-                font-weight: 700;
-            }
-        }
-
-        &__divider{
-            border-bottom: solid 1px grey;
-            width: 100%;
-        }
+      &.current {
+        color: $colorPrimary;
+        font-weight: 700;
+      }
     }
+
+    &__divider {
+      border-bottom: solid 1px grey;
+      width: 100%;
+    }
+  }
 }
