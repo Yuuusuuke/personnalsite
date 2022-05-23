@@ -1,0 +1,132 @@
+[
+    {
+        "id": "vale_guardian",
+        "name": "Vale Guardian",
+        "wing": "1"
+    },
+    {
+        "id": "spirit_woods",
+        "name": "Spirit Woods",
+        "wing": "1"
+    },
+    {
+        "id": "gorseval",
+        "name": "Gorseval",
+        "wing": "1"
+    },
+    {
+        "id": "sabetha",
+        "name": "Sabetha",
+        "wing": "1"
+    },
+    {
+        "id": "slothasor",
+        "name": "Slothasor",
+        "wing": "2"
+    },
+    {
+        "id": "bandit_trio",
+        "name": "Trio",
+        "wing": "2"
+    },
+    {
+        "id": "matthias",
+        "name": "Matthias",
+        "wing": "2"
+    },
+    {
+        "id": "escort",
+        "name": "Escort",
+        "wing": "3"
+    },
+    {
+        "id": "keep_construct",
+        "name": "Keep Construct",
+        "wing": "3"
+    },
+    {
+        "id": "twisted_castle",
+        "name": "Twisted Castle",
+        "wing": "3"
+    },
+    {
+        "id": "xera",
+        "name": "Xera",
+        "wing": "3"
+    },
+    {
+        "id": "cairn",
+        "name": "Cairn",
+        "wing": "4"
+    },
+    {
+        "id": "mursaat_overseer",
+        "name": "Mursaat Overseer",
+        "wing": "4"
+    },
+    {
+        "id": "samarog",
+        "name": "Samarog",
+        "wing": "4"
+    },
+    {
+        "id": "deimos",
+        "name": "Deimos",
+        "wing": "4"
+    },
+    {
+        "id": "soulless_horror",
+        "name": "Soulless Horror",
+        "wing": "5"
+    },
+    {
+        "id": "river_of_souls",
+        "name": "River of Souls",
+        "wing": "5"
+    },
+    {
+        "id": "statues_of_grenth",
+        "name": "Statues of Grenth",
+        "wing": "5"
+    },
+    {
+        "id": "voice_in_the_void",
+        "name": "Dhuum",
+        "wing": "5"
+    },
+    {
+        "id": "conjured_amalgamate",
+        "name": "Conjured Amalgamate",
+        "wing": "6"
+    },
+    {
+        "id": "twin_largos",
+        "name": "Twin Largos",
+        "wing": "6"
+    },
+    {
+        "id": "qadim",
+        "name": "Qadim",
+        "wing": "6"
+    },
+    {
+        "id": "gate",
+        "name": "Gate",
+        "wing": "7"
+    },
+    {
+        "id": "sabir",
+        "name": "Sabir",
+        "wing": "7"
+    },
+    {
+        "id": "adina",
+        "name": "Adina",
+        "wing": "7"
+    },
+    {
+        "id": "qadim_the_peerless",
+        "name": "Qadim the Peerless",
+        "wing": "7"
+    }
+  ]

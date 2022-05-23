@@ -11,7 +11,8 @@ export default function Thes() {
 
   useEffect(() => {
     dispatch(getTeasData());
-  }, [dispatch]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   const addBlank = (number) => {
     let result = [];
