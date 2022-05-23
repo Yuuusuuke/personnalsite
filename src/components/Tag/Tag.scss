@@ -7,6 +7,7 @@
   margin-right: 5px;
   padding-bottom: 5px;
 
+  /* - Teas - */
   &--thénoir {
     background-color: black;
     color: white;
@@ -30,5 +31,32 @@
   }
   &--oolong {
     background-color: rgb(243, 101, 207);
+  }
+  /* - - - */
+
+  /* - Dev - */
+  &--html {
+    background-color: #f06529;
+    color: white;
+  }
+  &--css {
+    background-color: #264de4;
+    color: white;
+  }
+  &--scss {
+    background-color: #f8a5c2;
+  }
+  &--javascript {
+    background-color: #f0db4f;
+  }
+  &--bootstrap {
+    background-color: #7952b3;
+    color: white;
+  }
+  &--react {
+    background-color: #61dafb;
+  }
+  &--jquery {
+    background-color: #b3d4fc;
   }
 }

@@ -1,0 +1,89 @@
+@import "../../style/global.scss";
+@import "../../style/mixins.scss";
+
+.projectBackground {
+  width: 100%;
+  min-height: $contentMinHeight;
+
+  // For Darkmode
+  &--dark {
+    background: map-get($map: $dark-mode, $key: colorBackground);
+    background-repeat: repeat;
+
+    & .projectContainer {
+      &__header,
+      &__description,
+      &__technologies,
+      &__projects h2,
+      &__projects p {
+        color: map-get($map: $dark-mode, $key: colorText);
+      }
+    }
+  }
+}
+
+.projectContainer {
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  padding-top: 1rem;
+
+  & section {
+    margin-bottom: 20px;
+  }
+
+  &__header {
+    text-align: center;
+    font-family: "Josefin Sans";
+  }
+
+  &__description {
+    font-family: "Noto Sans";
+    font-weight: 500;
+    line-height: 26px;
+    text-align: justify;
+  }
+
+  &__technologies {
+    font-family: "Noto Sans";
+    font-weight: 500;
+    & ul {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      & li {
+        width: 30%;
+        margin-bottom: 5px;
+
+        @include for-size(mobile) {
+          width: 50%;
+        }
+      }
+      list-style: "-    ";
+    }
+  }
+
+  &__projects {
+    & h2 {
+      font-family: "Noto Sans";
+    }
+    & p {
+      font-family: "Noto Sans";
+      font-weight: 500;
+    }
+    &__table {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start;
+      flex-wrap: wrap;
+
+      margin-top: 20px;
+
+      // Change ratio to 16/9 to fit with images
+      & .card a img {
+        aspect-ratio: 16/9;
+      }
+    }
+  }
+}

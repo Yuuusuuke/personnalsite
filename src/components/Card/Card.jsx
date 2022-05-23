@@ -49,6 +49,6 @@ Card.prototype = {
   link: PropTypes.string,
   title: PropTypes.string,
   sideTitle: PropTypes.string,
-  tags: PropTypes.array,
   sideTitleLink: PropTypes.string,
+  tags: PropTypes.array,
 };
