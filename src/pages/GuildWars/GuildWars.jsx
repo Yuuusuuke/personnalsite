@@ -32,9 +32,25 @@ export default function GuildWars() {
           </p>
         </section>
         <section className="gw2Container__table">
-          {gw2Data.bossList.map((boss, key) => {
-            return <BossCard key={key} boss={boss.id} />;
-          })}
+          {Array(7)
+            .fill(null)
+            .map((el, i) => {
+              return (
+                <div key={i} className="gw2Container__table__wing">
+                  <h3>Wing {i + 1}</h3>
+                  <div className="gw2Container__table__wing__bosses">
+                    {gw2Data.bossList
+                      .filter((e) => e.wing === (i + 1).toString())
+                      .map((boss, key) => {
+                        console.log(boss, i + 1);
+                        return (
+                          <BossCard key={key} boss={boss.id} check={false} />
+                        );
+                      })}
+                  </div>
+                </div>
+              );
+            })}
         </section>
       </div>
     </div>
