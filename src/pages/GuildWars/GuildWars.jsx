@@ -42,15 +42,24 @@ export default function GuildWars() {
                     {gw2Data.bossList
                       .filter((e) => e.wing === (i + 1).toString())
                       .map((boss, key) => {
-                        console.log(boss, i + 1);
                         return (
-                          <BossCard key={key} boss={boss.id} check={false} />
+                          <BossCard
+                            key={key}
+                            boss={boss}
+                            check={
+                              // Check if bosses are in both arrays
+                              gw2Data.raidData !== undefined &&
+                              gw2Data.raidData.some((e) => e === boss.id)
+                            }
+                          />
                         );
                       })}
                   </div>
                 </div>
               );
             })}
+          <div className="gw2Container__table__wing gw2Container__table__wing--blank"></div>
+          <div className="gw2Container__table__wing gw2Container__table__wing--blank"></div>
         </section>
       </div>
     </div>

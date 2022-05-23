@@ -2,131 +2,157 @@
     {
         "id": "vale_guardian",
         "name": "Vale Guardian",
-        "wing": "1"
+        "wing": "1",
+        "image": "https://i.imgur.com/VyaqQso.jpg"
     },
     {
         "id": "spirit_woods",
         "name": "Spirit Woods",
-        "wing": "1"
+        "wing": "1",
+        "image": "https://i.imgur.com/8YbtEme.jpg"
     },
     {
         "id": "gorseval",
         "name": "Gorseval",
-        "wing": "1"
+        "wing": "1",
+        "image": "https://i.imgur.com/3lRfsiK.jpg"
     },
     {
         "id": "sabetha",
         "name": "Sabetha",
-        "wing": "1"
+        "wing": "1",
+        "image": "https://i.imgur.com/SG6bGuZ.jpg"
     },
     {
         "id": "slothasor",
         "name": "Slothasor",
-        "wing": "2"
+        "wing": "2",
+        "image": "https://i.imgur.com/Q5yExxz.jpg"
     },
     {
         "id": "bandit_trio",
         "name": "Trio",
-        "wing": "2"
+        "wing": "2",
+        "image": "https://i.imgur.com/cpudcn3.jpg"
     },
     {
         "id": "matthias",
         "name": "Matthias",
-        "wing": "2"
+        "wing": "2",
+        "image": "https://i.imgur.com/ugArBZu.jpg"
     },
     {
         "id": "escort",
         "name": "Escort",
-        "wing": "3"
+        "wing": "3",
+        "image": "https://i.imgur.com/JU9LDIe.jpg"
     },
     {
         "id": "keep_construct",
         "name": "Keep Construct",
-        "wing": "3"
+        "wing": "3",
+        "image": "https://i.imgur.com/yAsMkNC.jpg"
     },
     {
         "id": "twisted_castle",
         "name": "Twisted Castle",
-        "wing": "3"
+        "wing": "3",
+        "image": "https://i.imgur.com/esrzNEn.jpg"
     },
     {
         "id": "xera",
         "name": "Xera",
-        "wing": "3"
+        "wing": "3",
+        "image": "https://i.imgur.com/T4N3z3C.jpg"
     },
     {
         "id": "cairn",
         "name": "Cairn",
-        "wing": "4"
+        "wing": "4",
+        "image": "https://i.imgur.com/r0v2zmG.jpg"
     },
     {
         "id": "mursaat_overseer",
         "name": "Mursaat Overseer",
-        "wing": "4"
+        "wing": "4",
+        "image": "https://i.imgur.com/D2hKJKt.jpg"
     },
     {
         "id": "samarog",
         "name": "Samarog",
-        "wing": "4"
+        "wing": "4",
+        "image": "https://i.imgur.com/N3oKKJn.jpg"
     },
     {
         "id": "deimos",
         "name": "Deimos",
-        "wing": "4"
+        "wing": "4",
+        "image": "https://i.imgur.com/AGg39k6.jpg"
     },
     {
         "id": "soulless_horror",
         "name": "Soulless Horror",
-        "wing": "5"
+        "wing": "5",
+        "image": "https://i.imgur.com/ZIK2fMw.jpg"
     },
     {
         "id": "river_of_souls",
         "name": "River of Souls",
-        "wing": "5"
+        "wing": "5",
+        "image": "https://i.imgur.com/8fzZv4F.jpg"
     },
     {
         "id": "statues_of_grenth",
         "name": "Statues of Grenth",
-        "wing": "5"
+        "wing": "5",
+        "image": "https://i.imgur.com/OdHHzO3.jpg"
     },
     {
         "id": "voice_in_the_void",
         "name": "Dhuum",
-        "wing": "5"
+        "wing": "5",
+        "image": "https://i.imgur.com/VPzbsjt.jpg"
     },
     {
         "id": "conjured_amalgamate",
         "name": "Conjured Amalgamate",
-        "wing": "6"
+        "wing": "6",
+        "image": "https://i.imgur.com/L7EakdA.jpg"
     },
     {
         "id": "twin_largos",
         "name": "Twin Largos",
-        "wing": "6"
+        "wing": "6",
+        "image": "https://i.imgur.com/fJpP1cK.jpg"
     },
     {
         "id": "qadim",
         "name": "Qadim",
-        "wing": "6"
+        "wing": "6",
+        "image": "https://i.imgur.com/fXTkJj7.jpg"
     },
     {
         "id": "gate",
         "name": "Gate",
-        "wing": "7"
+        "wing": "7",
+        "image": "https://i.imgur.com/rsVhq37.png"
     },
     {
         "id": "sabir",
         "name": "Sabir",
-        "wing": "7"
+        "wing": "7",
+        "image": "https://i.imgur.com/Hb6NV2S.jpg"
     },
     {
         "id": "adina",
         "name": "Adina",
-        "wing": "7"
+        "wing": "7",
+        "image": "https://i.imgur.com/oPGIGQD.jpg"
     },
     {
         "id": "qadim_the_peerless",
         "name": "Qadim the Peerless",
-        "wing": "7"
+        "wing": "7",
+        "image": "https://i.imgur.com/XZpNQwO.jpg"
     }
   ]
