@@ -5,13 +5,16 @@ export const guildwars2Slice = createSlice({
     name: "guildwars2",
     initialState: {
         bossList : bossList,
-        token: "6E6CC2B1-48B8-6844-B5A7-17A82367DF1F81B51195-7274-4014-B555-DF929E9C025D",
+        token: undefined,
         accountName: "",
         raidData: undefined,
         status: 0,
         message: "",
     },
     reducers:{
+        setToken: (state, action) => {
+            state.token = action.payload;
+        }
     },
     extraReducers: (builder) => {
         builder.addCase(getAccountData.fulfilled, (state, action) => {
@@ -32,7 +35,7 @@ export const guildwars2Slice = createSlice({
     }
 })
 
-export const {} = guildwars2Slice.actions;
+export const {setToken} = guildwars2Slice.actions;
 
 export default guildwars2Slice.reducer;
 

@@ -27,6 +27,61 @@
   height: 100%;
   padding-top: 1rem;
 
+  &__inputAPIKey {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+    &__textField {
+      width: 100%;
+      max-width: 400px;
+      padding: 0 5px;
+
+      border: solid 2px grey;
+      border-right: 0;
+      border-radius: 10px 0 0 10px;
+      transition: all 0.2s ease-in-out;
+      font-weight: 500;
+      font-family: "Noto Sans";
+
+      &:focus-visible {
+        outline: none;
+        border: solid 2px $colorPrimary;
+        transform: scale(105%);
+      }
+    }
+
+    &__showButton {
+      padding: 0 5px;
+      border: solid 2px grey;
+      border-right: 0;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      background-color: white;
+
+      &:hover {
+        transform: scale(110%);
+        color: $colorPrimary;
+        z-index: 2;
+      }
+    }
+
+    &__button {
+      border: solid 2px grey;
+      border-radius: 0 10px 10px 0;
+      padding: 0 5px;
+      background-color: $colorPrimary;
+      color: white;
+      font-weight: 500;
+      font-family: "Noto Sans";
+      transition: transform 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(110%);
+      }
+    }
+  }
+
   &__table {
     display: flex;
     flex-wrap: wrap;

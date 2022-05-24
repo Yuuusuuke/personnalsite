@@ -5,6 +5,8 @@ import { getTeasData } from "../../redux/teas";
 import Card from "../../components/Card/Card";
 
 export default function Thes() {
+  document.title = "Yuusuke - Thés";
+
   const darkMode = useSelector((state) => state.darkMode).active;
   const teasList = useSelector((state) => state.teas).list;
   const dispatch = useDispatch();

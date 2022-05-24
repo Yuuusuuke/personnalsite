@@ -119,9 +119,10 @@ This project uses :
 - [x] Twitch embed on Index
 - [x] List of projects
 - [x] Weekly Bosses Checker
-- [ ] Add custom API key for Boss Checker
+- [x] Add custom API key for Boss Checker
 - [ ] Add more content for the Index
 - [ ] Add Steam badge (custom)
+- [ ] Setup a database + API
 
 See the [open issues](https://github.com/Yuuusuuke/personnalsite/issues) for a full list of proposed features (and known issues).
 
