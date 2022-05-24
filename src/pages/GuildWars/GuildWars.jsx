@@ -11,22 +11,30 @@ export default function GuildWars() {
 
   const [APIKey, setAPIKey] = useState(null);
   const [showKey, setShowKey] = useState(false);
+  const [error, setError] = useState(false);
 
   const darkMode = useSelector((state) => state.darkMode).active;
   const gw2Data = useSelector((state) => state.guildwars2);
   const dispatch = useDispatch();
 
   useEffect(() => {
+    localStorage.getItem("APIKey") !== null &&
+      dispatch(setToken(localStorage.getItem("APIKey")));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  useEffect(() => {
     if (gw2Data.token !== undefined) {
-      if (gw2Data.accountName === "") {
-        dispatch(getAccountData(gw2Data.token));
-      }
-      if (gw2Data.raidData === undefined) {
-        dispatch(getRaidData(gw2Data.token));
-      }
+      dispatch(getAccountData(gw2Data.token));
+      dispatch(getRaidData(gw2Data.token));
+      localStorage.setItem("APIKey", gw2Data.token);
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [gw2Data.token]);
+
+  useEffect(() => {
+    setError(gw2Data.status !== 0 && gw2Data.status !== 200);
+  }, [gw2Data.status]);
 
   return (
     <div
@@ -37,34 +45,43 @@ export default function GuildWars() {
           <h1 className="gw2Container__header__title">Boss Checker</h1>
           <p className="gw2Container__header__subTitle">
             Entrez votre clé API pour avoir les boss de raid que vous avez faits
-            cette semaine.
+            cette semaine. Une fois entrée et validée, votre clé API est
+            enregistrée pour vos prochaines visites !
           </p>
         </section>
 
-        <form
-          className="gw2Container__inputAPIKey"
-          onSubmit={(e) => {
-            e.preventDefault();
-            dispatch(setToken(APIKey));
-          }}
-        >
-          <input
-            className="gw2Container__inputAPIKey__textField"
-            type={showKey ? "text" : "password"}
-            id="APIKey"
-            name="APIKey"
-            placeholder="Clé API"
-            required
-            onChange={(e) => setAPIKey(e.target.value)}
-          />
-          <div
-            className="gw2Container__inputAPIKey__showButton"
-            onClick={() => setShowKey(!showKey)}
+        <section className="gw2Container__inputAPIKey">
+          <form
+            onSubmit={(e) => {
+              e.preventDefault();
+              dispatch(setToken(APIKey));
+            }}
           >
-            <FontAwesomeIcon icon={faEye} />
-          </div>
-          <input className="gw2Container__inputAPIKey__button" type="submit" />
-        </form>
+            <input
+              className="gw2Container__inputAPIKey__textField"
+              type={showKey ? "text" : "password"}
+              id="APIKey"
+              name="APIKey"
+              placeholder="Clé API"
+              required
+              onChange={(e) => setAPIKey(e.target.value)}
+            />
+            <div
+              className="gw2Container__inputAPIKey__showButton"
+              onClick={() => setShowKey(!showKey)}
+            >
+              <FontAwesomeIcon icon={faEye} />
+            </div>
+            <input
+              className="gw2Container__inputAPIKey__button"
+              type="submit"
+            />
+          </form>
+
+          <p className="gw2Container__inputAPIKey__error">
+            {error && `Erreur ${gw2Data.status} : ${gw2Data.message}`}
+          </p>
+        </section>
 
         <section className="gw2Container__table">
           {Array(7)
