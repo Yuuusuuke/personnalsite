@@ -8,10 +8,13 @@ export const darkModeSlice = createSlice({
     reducers:{
         switchMode: state => {
             state.active = !state.active;
+        },
+        setMode: (state, action) => {
+            state.active = action.payload;
         }
     }
 })
 
-export const {switchMode} = darkModeSlice.actions;
+export const {switchMode, setMode} = darkModeSlice.actions;
 
 export default darkModeSlice.reducer;
