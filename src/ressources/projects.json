@@ -32,7 +32,7 @@
                 "bootstrap",
                 "react"
             ],
-            "image": "https://i.imgur.com/Cg45Tm2.jpg"
+            "image": "https://i.imgur.com/aw6VPX3.jpg"
         },
         {
             "name": "Reservia",
@@ -86,6 +86,52 @@
                 "javascript"
             ],
             "image": "https://i.imgur.com/2MGbJF5.jpg"
+        },
+        {
+            "name": "Billed",
+            "gitlabLink": "https://github.com/Yuuusuuke/VincentAllio_9_27122021",
+            "websiteLink": "https://yuuusuuke.github.io/VincentAllio_9_27122021/",
+            "technologies":[
+                "html",
+                "scss",
+                "javascript",
+                "jest"
+            ],
+            "image": "https://i.imgur.com/TLT8Yuw.jpg"
+        },
+        {
+            "name": "Kasa",
+            "gitlabLink": "https://github.com/Yuuusuuke/VincentAllio_11_14022022",
+            "websiteLink": "https://yuuusuuke.github.io/VincentAllio_11_14022022/",
+            "technologies":[
+                "html",
+                "scss",
+                "react"
+            ],
+            "image": "https://i.imgur.com/jY5tRCx.jpg"
+        },
+        {
+            "name": "SportSee",
+            "gitlabLink": "https://github.com/Yuuusuuke/VincentAllio_12_08032022",
+            "websiteLink": "https://github.com/Yuuusuuke/VincentAllio_13_12052022",
+            "technologies":[
+                "html",
+                "scss",
+                "react"
+            ],
+            "image": "https://i.imgur.com/lOqJjTd.jpg"
+        },
+        {
+            "name": "ArgentBank",
+            "gitlabLink": "https://github.com/Yuuusuuke/VincentAllio_13_12052022",
+            "websiteLink": "https://github.com/Yuuusuuke/VincentAllio_13_12052022",
+            "technologies":[
+                "html",
+                "scss",
+                "react",
+                "redux"
+            ],
+            "image": "https://i.imgur.com/CVG1UhT.jpg"
         }
     ]
 }
