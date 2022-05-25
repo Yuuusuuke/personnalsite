@@ -102,7 +102,7 @@
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
       animation: 0.5s slideup both;
 
-      op & p {
+      & p {
         font-size: 16px;
         font-weight: 500;
         color: map_get($light-mode, colorText);

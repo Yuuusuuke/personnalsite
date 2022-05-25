@@ -16,6 +16,7 @@ export default function Navbar() {
       <div className="Navbar__links">
         <Link to="/">
           <img className="Navbar__links__image" src="/logo316.png" alt="Logo" />
+          <h2 className="Navbar__links__nameBrand">Yuusuke</h2>
         </Link>
         <Link
           className={`Navbar__links__menu${

@@ -48,6 +48,21 @@
       background-color: white;
     }
 
+    &__nameBrand {
+      display: none;
+      font-size: 1.5rem;
+      font-weight: 500;
+      font-style: normal;
+      margin: 0;
+      color: $colorPrimary;
+      font-family: "Josefin Sans";
+      padding-top: 5px;
+
+      @include for-size(mobile) {
+        display: block;
+      }
+    }
+
     &__menu {
       font-size: 1.25rem;
       font-weight: 500;
