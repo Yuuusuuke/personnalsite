@@ -25,7 +25,6 @@ export const guildwars2Slice = createSlice({
             }
         });
         builder.addCase(getRaidData.fulfilled, (state, action) => {
-            console.log(action);
             state.status = action.payload.status;
             state.message = action.payload.res.text;
             if(action.payload.ok){
