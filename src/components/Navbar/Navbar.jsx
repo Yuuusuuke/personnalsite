@@ -12,7 +12,7 @@ export default function Navbar() {
   let location = useLocation().pathname;
 
   return (
-    <nav className={`Navbar Navbar--${darkMode ? "dark" : "ligth"}`}>
+    <nav className={`Navbar Navbar--${darkMode ? "dark" : "light"}`}>
       <div className="Navbar__links">
         <Link to="/">
           <img className="Navbar__links__image" src="/logo316.png" alt="Logo" />

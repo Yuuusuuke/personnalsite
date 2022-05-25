@@ -6,9 +6,6 @@
 
   // For Darkmode
   &--dark {
-    background: map-get($map: $dark-mode, $key: colorBackground);
-    background-repeat: repeat;
-
     & .thesContainer {
       &__header {
         color: map-get($map: $dark-mode, $key: colorText);
@@ -22,6 +19,11 @@
   width: 100%;
   height: 100%;
   padding-top: 1rem;
+
+  &__header {
+    color: white;
+    font-family: "Noto Sans";
+  }
 
   &__table {
     display: flex;

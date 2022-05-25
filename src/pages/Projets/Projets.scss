@@ -7,9 +7,6 @@
 
   // For Darkmode
   &--dark {
-    background: map-get($map: $dark-mode, $key: colorBackground);
-    background-repeat: repeat;
-
     & .projectContainer {
       &__header,
       &__description,
@@ -28,13 +25,27 @@
   height: 100%;
   padding-top: 1rem;
 
-  & section {
-    margin-bottom: 20px;
+  & > :not(:first-child) {
+    margin-top: 20px;
   }
 
   &__header {
-    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     font-family: "Josefin Sans";
+    color: white;
+    & h1 {
+      text-shadow: 3px 5px 2px #474747;
+    }
+
+    & p {
+      background-color: rgba($color: #000000, $alpha: 0.4);
+      padding: 3px 10px;
+      border-radius: 5px;
+      border: 1px solid rgba($color: #000000, $alpha: 0.4);
+      text-align: center;
+    }
   }
 
   &__description {
@@ -42,11 +53,13 @@
     font-weight: 500;
     line-height: 26px;
     text-align: justify;
+    color: white;
   }
 
   &__technologies {
     font-family: "Noto Sans";
     font-weight: 500;
+    color: white;
     & ul {
       display: flex;
       flex-direction: row;
@@ -66,10 +79,12 @@
   &__projects {
     & h2 {
       font-family: "Noto Sans";
+      color: white;
     }
     & p {
       font-family: "Noto Sans";
       font-weight: 500;
+      color: white;
     }
     &__table {
       display: flex;

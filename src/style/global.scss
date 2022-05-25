@@ -2,14 +2,16 @@
 $colorPrimary: #1a5ca2;
 
 $light-mode: (
-  colorBackground: #f8f8f8,
+  linkBackground:
+    url("https://r4.wallpaperflare.com/wallpaper/965/708/63/texture-abstract-blue-cyan-wallpaper-83ffd747ae4257c4d6eaead474ed0f5a.jpg"),
   colorContainer: #f8f8f8,
   colorText: black,
   colorNavbar: #f8f8f8,
 );
 
 $dark-mode: (
-  colorBackground: url("../../ressources/backgroundPatternDark.png"),
+  linkBackground:
+    url("https://r4.wallpaperflare.com/wallpaper/531/951/621/digital-digital-art-artwork-illustration-minimalism-hd-wallpaper-08869d3810a06c28a09cf1be487204ea.jpg"),
   colorContainer: lighten(#121212, 10%),
   colorNavbar: lighten(#121212, 5%),
   colorText: white,
